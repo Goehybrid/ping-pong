@@ -92,6 +92,7 @@
                 canvasContext.fillText('Player 2 Win', 350,200);
             }
             canvasContext.fillText("Click to continue", 350,500);
+			  resetScores();
             return;
         }
 
@@ -187,6 +188,11 @@
         ballX = canvas.width / 2;
         ballY = canvas.height / 2;
     }
+
+	function resetScores(){
+		player1Score = 0;
+		player2Score = 0;
+	}
 
 </script>
 </body>
